@@ -1,0 +1,15 @@
+The Domain Name System (DNS) resolves a domain name to its corresponding IP address.
+
+A user queries the DNS server with a domain name, and the DNS server responds with the corresponding IP address. 
+
+In DNS server hijacking, an attacker compromises a DNS server and changes its mapping settings to redirect toward a rogue DNS server that would redirect the user’s requests to the attacker’s rogue server.
+
+Consequently, when the user enters a legitimate URL in a browser, the settings will redirect to the attacker’s fake site.
+
+Step 1: Users who desire to resolve a domain name to its corresponding IP address send a DNS query to the primary DNS server specified in its Transmission Control Protocol (TCP)/IP properties.
+
+▪ Steps 2 to 7: If the requested DNS mapping does not exist on the user’s primary DNS server, the server forwards the request to the root server. 
+The root server forwards the request to the .com namespace, where the user can find DNS mappings. This process repeats recursively until the DNS mapping is resolved.
+
+▪ Step 8: Ultimately, when the system finds the primary DNS server for the requested DNS mapping, it generates a cache for the IP address in the user’s primary DNS server.
+
