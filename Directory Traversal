@@ -1,0 +1,13 @@
+-> An attacker may be able to perform a directory traversal attack owing to a vulnerability in the code of a web application. 
+
+-> In addition, poorly patched or configured web server software can make the web server vulnerable to a directory traversal attack.
+
+-> The design of web servers limits public access to some extent. 
+
+-> Directory traversal is the exploitation of HTTP through which attackers can access restricted directories and execute commands outside the web server’s root directory by manipulating a Uniform Resource Locator (URL). 
+
+-> In directory traversal attacks, attackers use the dot-dot-slash (../) sequence to access restricted directories outside the web server’s root directory.
+
+-> The attacker usually performs this attack with the help of a browser.
+
+-> A web server is vulnerable to this attack if it accepts input data from a browser without proper validation
