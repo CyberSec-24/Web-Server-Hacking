@@ -1,0 +1,17 @@
+An HTTP response-splitting attack is a web-based attack in which the attacker tricks the server by injecting new lines into response headers, along with arbitrary code. 
+
+It involves adding header response data into the input field so that the server splits the response into two responses. This type of attack exploits vulnerabilities in input validation. 
+
+Cross-site scripting (XSS), cross-site request forgery (CSRF), and Structured Query Language (SQL) injection are examples of this type of attack
+
+The web server, in turn, responds to each request. The attacker can pass malicious data to a vulnerable application, and the application includes the data in an HTTP response header. 
+
+The attacker can control the first response to redirect the user to a malicious website, whereas the web browser will discard other responses
+
+ the attacker sends a response-splitting request to the web server. 
+
+The server splits the response into two and sends the first response to the attacker and the second response to the victim. 
+
+After receiving the response from the web server, the victim requests service by providing credentials.
+
+the attacker requests for the index page. Subsequently, the web server sends the response to the victim’s request to the attacker, and the victim remains uninformed
