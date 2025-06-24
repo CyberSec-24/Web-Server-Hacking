@@ -1,0 +1,9 @@
+Web cache poisoning damages the reliability of an intermediate web cache source. In this attack, an attacker swaps cached content for a random URL with infected content. 
+
+Users of the web cache source may unknowingly use the poisoned content instead of the true and secured content when requesting the required URL through the web cache
+
+An attacker forces the web server’s cache to flush its actual cache content and sends a specially crafted request to store in the cache.
+
+In this case, all the users of that web server cache will receive malicious content until the servers flush the web cache. 
+
+Web cache poisoning attacks are possible if the web server and application have HTTP response-splitting flaws.
