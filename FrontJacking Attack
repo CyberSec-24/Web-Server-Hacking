@@ -1,0 +1,15 @@
+Front jacking is a type of web server attack in which an attacker injects or manipulates the front-end components of a web application, such as scripts or HTML elements, to hijack a user interface or user interactions. 
+
+This attack often targets poorly configured Nginx reverse proxy servers in shared hosting environments by combining CRLF injection, HTTP request header injection, and XSS
+
+Attackers exploit flaws in the target reverse proxy configuration, such as improper sanitization of $uri and $document_uri variables, to inject a new host header. 
+
+This hijacks the execution flow of the front-end reverse proxy server and consequently replaces the accessed backend server with an attacker-controlled server. 
+
+This allows attackers to display malicious content, redirect users to fake websites, execute reflected XSS and phishing payloads, and inject harmful scripts
+
+ The attacker creates an HTTP request containing CRLF characters in the URI to inject a malicious host header and sends the request to the vulnerable reverse proxy server.
+
+The vulnerable reverse proxy accepts a request containing the malicious host header injected via the CRLF injection.
+
+
