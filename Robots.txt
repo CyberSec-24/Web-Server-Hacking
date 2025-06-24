@@ -1,0 +1,9 @@
+-> A website owner creates a robots.txt file to list the files or directories a web crawler should index for providing search results. 
+
+-> Poorly written robots.txt files can cause the complete indexing of website files and directories. 
+
+-> If confidential files and directories are indexed, an attacker may easily obtain information such as passwords, email addresses, hidden links, and membership areas.
+
+-> If the owner of the target website writes the robots.txt file without allowing the indexing of restricted pages for providing search results, 
+
+-> an attacker can still view the robots.txt file of the site to discover restricted files and then view them to gather information
