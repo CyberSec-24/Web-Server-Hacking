@@ -1,0 +1,16 @@
+The HTTP/2 continuation flood attack involves exploiting the handling mechanism of HTTP/2 CONTINUATION frames to exhaust the target Apache server.
+
+In HTTP/2, headers that are too large to fit into a single HEADERS frame can be divided into multiple frames. 
+
+The initial portion of the headers is sent in a HEADERS frame, and the remaining parts are sent in CONTINUATION frames.
+
+Attackers exploit this mechanism by sending numerous CONTINUATION frames over a single TCP connection without completing the headers,
+
+overwhelming the Apache server's resources, and causing a denial-of-service (DoS) condition on the server
+
+ The attacker first establishes a TCP connection with the target Apache server. 
+
+The attacker then sends a legitimate HEADERS frame. This frame contains headers for a request, and more headers follow in the subsequent CONTINUATION frames.
+
+For each received CONTINUATION frame, the server allocates additional memory and processing resources to handle the incoming header data. The server remained in a state of anticipation and waited for the header sequence to be completed.
+
