@@ -1,0 +1,13 @@
+Attackers can use tools such as Shodan to gather information about IIS servers, enhancing their ability to perform targeted and efficient attacks
+
+By identifying the version of IIS used, attackers can match known vulnerabilities to a specific version, making it easier to exploit them. 
+
+In addition, information such as open ports, running services, and server configurations can reveal weak points in the security posture of the server.
+
+With a detailed knowledge of the IIS server environment, attackers can plan their attacks to exploit specific weaknesses. 
+
+For example, if the gathered data show that a particular server uses an outdated version of IIS, attackers may deploy exploits targeting vulnerabilities specific to that version
+
+attackers can use tools such as Shodan, which can help them gather the necessary information about IIS servers, thereby significantly enhancing their ability to perform targeted and efficient attacks. 
+
+
