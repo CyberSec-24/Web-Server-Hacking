@@ -1,0 +1,13 @@
+Web server misconfiguration refers to the configuration weaknesses in web infrastructure that can be exploited to launch various attacks on web servers, such as directory traversal, server intrusion, and data theft. 
+
+Administrators who configure web servers improperly may leave serious loopholes in the web server, 
+
+thereby providing an attacker the chance to exploit the misconfigured web server to compromise its security and obtain sensitive information
+
+An attacker searches for such vulnerable web servers to launch attacks. The misconfiguration of a web server provides the attacker a path to enter the target network of an organization. 
+
+These loopholes in the server can also help an attacker bypass user authentication.
+
+Nginx web server where the root location (location / {}) is missing. This can lead to undefined behaviors, potentially exposing directory listings or default server configurations.
+
+
