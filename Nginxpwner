@@ -1,0 +1,5 @@
+NginxPwner is a Python-based tool designed to identify common misconfigurations and vulnerabilities on Nginx web servers. 
+
+NginxPwner automates the process of checking for security issues, such as misconfigured HTTP methods, improper file permissions, outdated software versions, and insecure default settings.
+
+Using this tool, attackers can quickly gather detailed information on the potential entry points and weaknesses in the Nginx setup, making it easier to launch targeted attacks.
