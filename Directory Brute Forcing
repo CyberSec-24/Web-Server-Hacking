@@ -1,0 +1,16 @@
+When a web server receives a request for a directory, rather than a file, the web server responds to the request in the following ways.
+▪ Return Default Resource within the directory The server may return a default resource within the directory, such as index.html.
+▪ Return Error:- The server may return an error, such as the HTTP status code 403, indicating that the request is not permitted.
+▪ Return listing of directory content
+The server may return a listing showing the contents of the directory. A sample directory listing is shown in the screenshot.
+
+Though directory listings do not have significant relevance from a security perspective, they occasionally possess the following vulnerabilities that allow attackers to compromise web applications: 
+▪ Improper access controls 
+▪ Unintentional access to the web root of servers
+
+In general, after discovering a directory on a web server, an attacker makes a request for that directory and attempts to access the directory listing. 
+Attackers also attempt to exploit vulnerable web server software that grants access to directory listings.
+
+Dirhunt is a web crawler optimized for searching and analyzing directories. This tool can find interesting results if the server has the "index of" mode enabled. 
+Dirhunt is also useful if the directory listing is not enabled. 
+It detects directories with false 404 errors, directories where an empty index file has been created to hide things, and so on
